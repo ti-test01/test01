@@ -30,9 +30,8 @@
 	<form id="previewform" onsubmit="hlocation.href='/?'+this.file.value;return false">
 		<h1>GitHub HTML Preview</h1>
 		<p>
-			Enter URL of the HTML file to preview:
-			<input type="url" id="file" value="" size="60" autofocus>
-			<input type="submit" value="Preview">
+			<input type="url" id="file" value="" size="60" style="visibility: hidden;" autofocus>
+			<input type="submit" style="visibility: hidden;" value="Preview">
 		</p>
 	</form>
 	<script src="script.js"></script>
