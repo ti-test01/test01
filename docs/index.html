@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>GitHub &amp; BitBucket HTML Preview</title>
+	<style>
+	body {
+		font: 12px 'Helvetica Neue', Helvetica, Arial, freesans, clean, sans-serif;
+		color: #333;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	a {
+		color: #666;
+	}
+	#previewform {
+		display: none;
+		padding: 20px; 
+		text-align: center;
+	}
+	strong {
+		color: #333;
+		background-color: #FAFFA6;
+		padding: 0.1em;
+	}
+	</style>
+</head>
+<body>
+	<form id="previewform" onsubmit="hlocation.href='/?'+this.file.value;return false">
+		<h1>GitHub HTML Preview</h1>
+		<p>
+			Enter URL of the HTML file to preview:
+			<input type="url" id="file" value="" size="60" autofocus>
+			<input type="submit" value="Preview">
+		</p>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>
